@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A0D3DD3B1EBF4B4E001583CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3DD3A1EBF4B4E001583CC /* AppDelegate.swift */; };
+		A0D3DD3D1EBF4B4E001583CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3DD3C1EBF4B4E001583CC /* ViewController.swift */; };
+		A0D3DD401EBF4B4E001583CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D3DD3E1EBF4B4E001583CC /* Main.storyboard */; };
+		A0D3DD421EBF4B4E001583CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0D3DD411EBF4B4E001583CC /* Assets.xcassets */; };
+		A0D3DD451EBF4B4E001583CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0D3DD431EBF4B4E001583CC /* LaunchScreen.storyboard */; };
+		A0D3DD4E1EBF4EC6001583CC /* ETPToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3DD4D1EBF4EC6001583CC /* ETPToken.swift */; };
+		A0D3DD501EC25D53001583CC /* ETPTokenField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3DD4F1EC25D53001583CC /* ETPTokenField.swift */; };
+		A0D3DD521EC25D8C001583CC /* ETPTokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3DD511EC25D8C001583CC /* ETPTokenView.swift */; };
+		A0D3DD541EC25DB2001583CC /* ETPUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3DD531EC25DB2001583CC /* ETPUtils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A0D3DD371EBF4B4E001583CC /* EmailTokenPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmailTokenPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0D3DD3A1EBF4B4E001583CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A0D3DD3C1EBF4B4E001583CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A0D3DD3F1EBF4B4E001583CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0D3DD411EBF4B4E001583CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0D3DD441EBF4B4E001583CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0D3DD461EBF4B4E001583CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0D3DD4D1EBF4EC6001583CC /* ETPToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ETPToken.swift; path = ETPicker/ETPToken.swift; sourceTree = "<group>"; };
+		A0D3DD4F1EC25D53001583CC /* ETPTokenField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ETPTokenField.swift; path = ETPicker/ETPTokenField.swift; sourceTree = "<group>"; };
+		A0D3DD511EC25D8C001583CC /* ETPTokenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ETPTokenView.swift; path = ETPicker/ETPTokenView.swift; sourceTree = "<group>"; };
+		A0D3DD531EC25DB2001583CC /* ETPUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ETPUtils.swift; path = ETPicker/ETPUtils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0D3DD341EBF4B4E001583CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A0D3DD2E1EBF4B4E001583CC = {
+			isa = PBXGroup;
+			children = (
+				A0D3DD391EBF4B4E001583CC /* EmailTokenPicker */,
+				A0D3DD381EBF4B4E001583CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A0D3DD381EBF4B4E001583CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0D3DD371EBF4B4E001583CC /* EmailTokenPicker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0D3DD391EBF4B4E001583CC /* EmailTokenPicker */ = {
+			isa = PBXGroup;
+			children = (
+				A0D3DD4C1EBF4B59001583CC /* ETPicker */,
+				A0D3DD3A1EBF4B4E001583CC /* AppDelegate.swift */,
+				A0D3DD3C1EBF4B4E001583CC /* ViewController.swift */,
+				A0D3DD3E1EBF4B4E001583CC /* Main.storyboard */,
+				A0D3DD411EBF4B4E001583CC /* Assets.xcassets */,
+				A0D3DD431EBF4B4E001583CC /* LaunchScreen.storyboard */,
+				A0D3DD461EBF4B4E001583CC /* Info.plist */,
+			);
+			path = EmailTokenPicker;
+			sourceTree = "<group>";
+		};
+		A0D3DD4C1EBF4B59001583CC /* ETPicker */ = {
+			isa = PBXGroup;
+			children = (
+				A0D3DD4D1EBF4EC6001583CC /* ETPToken.swift */,
+				A0D3DD4F1EC25D53001583CC /* ETPTokenField.swift */,
+				A0D3DD511EC25D8C001583CC /* ETPTokenView.swift */,
+				A0D3DD531EC25DB2001583CC /* ETPUtils.swift */,
+			);
+			name = ETPicker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0D3DD361EBF4B4E001583CC /* EmailTokenPicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0D3DD491EBF4B4E001583CC /* Build configuration list for PBXNativeTarget "EmailTokenPicker" */;
+			buildPhases = (
+				A0D3DD331EBF4B4E001583CC /* Sources */,
+				A0D3DD341EBF4B4E001583CC /* Frameworks */,
+				A0D3DD351EBF4B4E001583CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmailTokenPicker;
+			productName = EmailTokenPicker;
+			productReference = A0D3DD371EBF4B4E001583CC /* EmailTokenPicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0D3DD2F1EBF4B4E001583CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				TargetAttributes = {
+					A0D3DD361EBF4B4E001583CC = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = S3AMF742NQ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A0D3DD321EBF4B4E001583CC /* Build configuration list for PBXProject "EmailTokenPicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0D3DD2E1EBF4B4E001583CC;
+			productRefGroup = A0D3DD381EBF4B4E001583CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0D3DD361EBF4B4E001583CC /* EmailTokenPicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0D3DD351EBF4B4E001583CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D3DD451EBF4B4E001583CC /* LaunchScreen.storyboard in Resources */,
+				A0D3DD421EBF4B4E001583CC /* Assets.xcassets in Resources */,
+				A0D3DD401EBF4B4E001583CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0D3DD331EBF4B4E001583CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0D3DD501EC25D53001583CC /* ETPTokenField.swift in Sources */,
+				A0D3DD4E1EBF4EC6001583CC /* ETPToken.swift in Sources */,
+				A0D3DD521EC25D8C001583CC /* ETPTokenView.swift in Sources */,
+				A0D3DD3D1EBF4B4E001583CC /* ViewController.swift in Sources */,
+				A0D3DD3B1EBF4B4E001583CC /* AppDelegate.swift in Sources */,
+				A0D3DD541EC25DB2001583CC /* ETPUtils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A0D3DD3E1EBF4B4E001583CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0D3DD3F1EBF4B4E001583CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0D3DD431EBF4B4E001583CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0D3DD441EBF4B4E001583CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0D3DD471EBF4B4E001583CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A0D3DD481EBF4B4E001583CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0D3DD4A1EBF4B4E001583CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S3AMF742NQ;
+				INFOPLIST_FILE = EmailTokenPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.stereocat.EmailTokenPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A0D3DD4B1EBF4B4E001583CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S3AMF742NQ;
+				INFOPLIST_FILE = EmailTokenPicker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.stereocat.EmailTokenPicker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0D3DD321EBF4B4E001583CC /* Build configuration list for PBXProject "EmailTokenPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D3DD471EBF4B4E001583CC /* Debug */,
+				A0D3DD481EBF4B4E001583CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0D3DD491EBF4B4E001583CC /* Build configuration list for PBXNativeTarget "EmailTokenPicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0D3DD4A1EBF4B4E001583CC /* Debug */,
+				A0D3DD4B1EBF4B4E001583CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0D3DD2F1EBF4B4E001583CC /* Project object */;
+}
