@@ -54,7 +54,6 @@ import UIKit
     func tokenView(_ token: ETPTokenView, displayTitleForObject object: AnyObject) -> String
     @objc optional func tokenView(_ token: ETPTokenView, displayDetailForObject object: AnyObject) -> String
     @objc optional func tokenView(_ token: ETPTokenView, titleForToken object: AnyObject) -> String
-    @objc optional func tokenView(_ token: ETPTokenView, withObject object: AnyObject, tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell
     @objc optional func tokenView(_ token: ETPTokenView, didSelectRowAtIndexPath indexPath: IndexPath)
     
     @objc optional func tokenViewShouldDeleteAllToken(_ tokenView: ETPTokenView) -> Bool
@@ -904,8 +903,7 @@ extension ETPTokenView : UITableViewDelegate {
             title = (delegate?.tokenView(self, displayTitleForObject: object))!
         }
         
-        let token = ETPToken(title: title, object: object)
-        addToken(token)
+        addToken(ETPToken(title: title, object: object))
         
         if (shouldHideSearchResultsOnSelect) {
             _hideSearchResults()
@@ -927,27 +925,24 @@ extension ETPTokenView : UITableViewDataSource {
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell: UITableViewCell? = delegate?.tokenView?(self, withObject: _resultArray[(indexPath as NSIndexPath).row], tableView: tableView, cellForRowAtIndexPath: indexPath)
-        if cell != nil {
-            return cell!
-        }
-        
         let cellIdentifier = "ETPSearchTableCell"
-        cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier) as UITableViewCell?
-        if (cell == nil) {
+        var cell: UITableViewCell
+        if let _cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)  {
+            cell = _cell
+        } else {
             cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: cellIdentifier)
         }
         
         if let detail = delegate?.tokenView?(self, displayDetailForObject: _resultArray[(indexPath as NSIndexPath).row]) {
             cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: cellIdentifier)
-            cell!.detailTextLabel!.text = detail
+            cell.detailTextLabel?.text = detail
         }
         
         let title = delegate?.tokenView(self, displayTitleForObject: _resultArray[(indexPath as NSIndexPath).row])
-        cell!.textLabel!.text = (title != nil) ? title : "No Title"
-        cell!.selectionStyle = UITableViewCellSelectionStyle.none
+        cell.textLabel?.text = title ?? "No Title"
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         
-        return cell!
+        return cell
     }
 }
 
